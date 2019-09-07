@@ -75,7 +75,7 @@ Owner -> Phone
 
 
 
------ run -----
+## run
 
 ```bash
 cd javascript
@@ -89,6 +89,7 @@ node registerUser.js
 node query.js
 node invoke.js
 ```
+
 
 
 
