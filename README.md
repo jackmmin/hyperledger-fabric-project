@@ -2,17 +2,21 @@ This project is study for hyperledger-fabric-practice
 
 # fabcar -> usermanager !!
 
------ Edit chaincode -----<br>
+## Edit chaincode
+
 ```bash
 cd ~/fabric-samples/chaincode/
 cp -r fabcar usermanager
 mv usermanager/go/fabcar.go usermanager/go/usermanager.go
+
 ```
 
-// change usermanager.go<br>
+### change usermanager.go
+
 ```bash
 nano usermanager/go/usermanager.go
 ```
+
 Car -> User<br>
 car -> user<br>
 Make -> Firstname<br>
@@ -23,50 +27,56 @@ make -> firstname<br>
 model -> lastname<br>
 colour -> email<br>
 owner -> phone<br>
-CAR -> USER<br>
-
---------------------------<br>
+CAR -> USER
 
 
------ Edit usermanager -----<br>
+
+## Edit usermanager
+
 ```bash
 cd ..
 cp -r fabcar usermanager
 cd usermanager
 ```
 
-// change startFabric.sh<br>
+### change startFabric.sh
+
 ```bash
 nano startFabric.sh
 ```
-fabcar -> usermanager<br>
 
-// change query.js<br>
+fabcar -> usermanager
+
+### change query.js
+
 ```bash
 nano javascript/query.js
 ```
-line 41 // const result = await contract.evaluateTransaction('queryUser', 'USER5');<br>
-add - const result = await contract.evaluateTransaction('queryAllUsers');<br>
 
-fabcar -> usermanager<br>
+line 41 // const result = await contract.evaluateTransaction('queryUser', 'USER5');<br>
+add - const result = await contract.evaluateTransaction('queryAllUsers');
+
+fabcar -> usermanager
 Car -> User<br>
 CAR -> USER<br>
 
-// change invoke.js<br>
+### change invoke.js
+
 ```bash
 nano javascript/invoke.js
 ```
+
 mod - await contract.submitTransaction('createUser', 'USER5', 'Ahn', 'jongmin', 'ggg@ggg.com', '010-7777-7777'); 
 
 fabcar -> usermanager<br>
 Car -> User<br>
 CAR -> USER<br>
-Owner -> Phone<br>
-
-----------------------------<br>
+Owner -> Phone
 
 
------ run -----<br>
+
+----- run -----
+
 ```bash
 cd javascript
 npm install
@@ -80,7 +90,6 @@ node query.js
 node invoke.js
 ```
 
----------------<br>
 
 
 ===================================================================
