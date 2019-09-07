@@ -25,22 +25,30 @@ CAR -> USER<br>
 
 
 ----- Edit usermanager -----<br>
+```bash
 cd ..<br>
 cp -r fabcar usermanager<br>
 cd usermanager<br>
+```
 
 // change startFabric.sh<br>
+```bash
 nano startFabric.sh<br>
+```
 fabcar -> usermanager<br>
 
 // change query.js<br>
+```bash
 nano javascript/query.js<br>
+```
 fabcar -> usermanager<br>
 Car -> User<br>
 CAR -> USER<br>
 
 // change invoke.js<br>
+```bash
 nano javascript/invoke.js<br>
+```
 fabcar -> usermanager<br>
 Car -> User<br>
 CAR -> USER<br>
@@ -50,10 +58,12 @@ Owner -> Phone<br>
 
 
 ----- run -----<br>
+```bash
 cd javascript<br>
 npm install<br>
 cd ..<br>
 ./startFabcar.sh<br>
+```
 
 ---------------<br>
 
