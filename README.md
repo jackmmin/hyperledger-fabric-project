@@ -76,6 +76,8 @@ cd ..
 cd javascript
 node enrollAdmin.js
 node registerUser.js
+node query.js
+node invoke.js
 ```
 
 ---------------<br>
