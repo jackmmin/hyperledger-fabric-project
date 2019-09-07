@@ -3,12 +3,16 @@ This project is study for hyperledger-fabric-practice
 ### fabcar -> usermanager !!
 
 ----- Edit chaincode -----<br>
-cd ~/fabric-samples/chaincode/<br>
-cp -r fabcar usermanager<br>
-mv usermanager/go/fabcar.go usermanager/go/usermanager.go<br>
+```bash
+cd ~/fabric-samples/chaincode/
+cp -r fabcar usermanager
+mv usermanager/go/fabcar.go usermanager/go/usermanager.go
+```
 
 // change usermanager.go<br>
-nano usermanager/go/usermanager.go<br>
+```bash
+nano usermanager/go/usermanager.go
+```
 Car -> User<br>
 car -> user<br>
 Make -> Firstname<br>
@@ -16,7 +20,7 @@ Model -> Lastname<br>
 Colour -> Email<br>
 Owner -> Phone<br>
 make -> firstname<br>
-model -> lastname<br><br>
+model -> lastname<br>
 colour -> email<br>
 owner -> phone<br>
 CAR -> USER<br>
