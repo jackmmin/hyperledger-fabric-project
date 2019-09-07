@@ -45,6 +45,9 @@ fabcar -> usermanager<br>
 ```bash
 nano javascript/query.js
 ```
+line 41 // const result = await contract.evaluateTransaction('queryUser', 'USER5');<br>
+add -> const result = await contract.evaluateTransaction('queryAllUsers');<br>
+
 fabcar -> usermanager<br>
 Car -> User<br>
 CAR -> USER<br>
@@ -67,6 +70,10 @@ cd javascript
 npm install
 cd ..
 ./startFabcar.sh
+
+cd javascript
+node enrollAdmin.js
+node registerUser.js
 ```
 
 ---------------<br>
