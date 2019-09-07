@@ -1,3 +1,63 @@
+This project is study for hyperledger-fabric-practice
+
+fabcar -> usermanager
+
+### Edit chaincode
+cd ~/fabric-samples/chaincode/
+cp -r fabcar usermanager
+mv usermanager/go/fabcar.go usermanager/go/usermanager.go
+
+# change usermanager.go
+nano usermanager/go/usermanager.go
+Car -> User
+car -> user
+Make -> Firstname
+Model -> Lastname
+Colour -> Email
+Owner -> Phone
+make -> firstname
+model -> lastname
+colour -> email
+owner -> phone
+CAR -> USER
+
+
+### Edit usermanager
+cd ..
+cp -r fabcar usermanager
+cd usermanager
+
+# change startFabric.sh
+nano startFabric.sh
+fabcar -> usermanager
+
+# change query.js
+nano javascript/query.js
+fabcar -> usermanager
+Car -> User
+CAR -> USER
+
+#change invoke.js
+nano javascript/invoke.js
+fabcar -> usermanager
+Car -> User
+CAR -> USER
+Owner -> Phone
+
+
+### run
+cd javascript
+npm install
+cd ..
+./startFabcar.sh
+
+
+
+
+=====================================================================
+
+
+
 [//]: # (SPDX-License-Identifier: CC-BY-4.0)
 
 ## Hyperledger Fabric Samples
