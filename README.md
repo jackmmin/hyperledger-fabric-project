@@ -56,6 +56,8 @@ CAR -> USER<br>
 ```bash
 nano javascript/invoke.js
 ```
+mod - await contract.submitTransaction('createUser', 'USER5', 'Ahn', 'jongmin', 'ggg@ggg.com', '010-7777-7777'); 
+
 fabcar -> usermanager<br>
 Car -> User<br>
 CAR -> USER<br>
