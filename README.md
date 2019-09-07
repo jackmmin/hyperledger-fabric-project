@@ -1,13 +1,13 @@
 This project is study for hyperledger-fabric-practice
 
-fabcar -> usermanager
+#### fabcar -> usermanager
 
-### Edit chaincode
+###Edit chaincode
 cd ~/fabric-samples/chaincode/
 cp -r fabcar usermanager
 mv usermanager/go/fabcar.go usermanager/go/usermanager.go
 
-# change usermanager.go
+#change usermanager.go
 nano usermanager/go/usermanager.go
 Car -> User
 car -> user
@@ -22,22 +22,22 @@ owner -> phone
 CAR -> USER
 
 
-### Edit usermanager
+###Edit usermanager
 cd ..
 cp -r fabcar usermanager
 cd usermanager
 
-# change startFabric.sh
+#change startFabric.sh
 nano startFabric.sh
 fabcar -> usermanager
 
-# change query.js
+#change query.js
 nano javascript/query.js
 fabcar -> usermanager
 Car -> User
 CAR -> USER
 
-# change invoke.js
+#change invoke.js
 nano javascript/invoke.js
 fabcar -> usermanager
 Car -> User
@@ -45,7 +45,7 @@ CAR -> USER
 Owner -> Phone
 
 
-### run
+###run
 cd javascript
 npm install
 cd ..
