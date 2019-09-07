@@ -7,19 +7,19 @@ cd ~/fabric-samples/chaincode/<br>
 cp -r fabcar usermanager<br>
 mv usermanager/go/fabcar.go usermanager/go/usermanager.go<br>
 
-// change usermanager.go
-nano usermanager/go/usermanager.go
-Car -> User
-car -> user
-Make -> Firstname
-Model -> Lastname
-Colour -> Email
-Owner -> Phone
-make -> firstname
-model -> lastname
-colour -> email
-owner -> phone
-CAR -> USER
+// change usermanager.go<br>
+nano usermanager/go/usermanager.go<br>
+Car -> User<br>
+car -> user<br>
+Make -> Firstname<br>
+Model -> Lastname<br>
+Colour -> Email<br>
+Owner -> Phone<br>
+make -> firstname<br>
+model -> lastname<br><br>
+colour -> email<br>
+owner -> phone<br>
+CAR -> USER<br>
 
 --------------------------
 
