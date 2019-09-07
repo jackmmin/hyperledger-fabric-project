@@ -2,7 +2,7 @@ This project is study for hyperledger-fabric-practice
 
 ### fabcar -> usermanager !!
 
------ Edit chaincode -----
+----- Edit chaincode -----<br>
 cd ~/fabric-samples/chaincode/<br>
 cp -r fabcar usermanager<br>
 mv usermanager/go/fabcar.go usermanager/go/usermanager.go<br>
