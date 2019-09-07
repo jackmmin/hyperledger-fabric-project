@@ -1,6 +1,6 @@
 This project is study for hyperledger-fabric-practice
 
-#### fabcar -> usermanager !!
+### fabcar -> usermanager !!
 
 ----- Edit chaincode -----
 cd ~/fabric-samples/chaincode/<br>
@@ -21,41 +21,41 @@ colour -> email<br>
 owner -> phone<br>
 CAR -> USER<br>
 
---------------------------
+--------------------------<br>
 
 
------ Edit usermanager -----
-cd ..
-cp -r fabcar usermanager
-cd usermanager
+----- Edit usermanager -----<br>
+cd ..<br>
+cp -r fabcar usermanager<br>
+cd usermanager<br>
 
-// change startFabric.sh
-nano startFabric.sh
-fabcar -> usermanager
+// change startFabric.sh<br>
+nano startFabric.sh<br>
+fabcar -> usermanager<br>
 
-// change query.js
-nano javascript/query.js
-fabcar -> usermanager
-Car -> User
-CAR -> USER
+// change query.js<br>
+nano javascript/query.js<br>
+fabcar -> usermanager<br>
+Car -> User<br>
+CAR -> USER<br>
 
-// change invoke.js
-nano javascript/invoke.js
-fabcar -> usermanager
-Car -> User
-CAR -> USER
-Owner -> Phone
+// change invoke.js<br>
+nano javascript/invoke.js<br>
+fabcar -> usermanager<br>
+Car -> User<br>
+CAR -> USER<br>
+Owner -> Phone<br>
 
-----------------------------
+----------------------------<br>
 
 
------ run -----
-cd javascript
-npm install
-cd ..
-./startFabcar.sh
+----- run -----<br>
+cd javascript<br>
+npm install<br>
+cd ..<br>
+./startFabcar.sh<br>
 
----------------
+---------------<br>
 
 
 =====================================================================
