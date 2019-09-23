@@ -1,8 +1,8 @@
-This project is study for hyperledger-fabric-practice
+# This project is study for hyperledger-fabric-practice
 
-# fabcar -> usermanager !!
+## fabcar -> usermanager !!
 
-## Edit chaincode
+### 1. Edit chaincode
 
 ```bash
 cd ~/fabric-samples/chaincode/
@@ -11,7 +11,7 @@ mv usermanager/go/fabcar.go usermanager/go/usermanager.go
 
 ```
 
-### change usermanager.go
+### 2. change usermanager.go
 
 ```bash
 nano usermanager/go/usermanager.go
@@ -31,7 +31,7 @@ CAR -> USER
 
 
 
-## Edit usermanager
+### 3. Edit usermanager
 
 ```bash
 cd ..
@@ -39,7 +39,7 @@ cp -r fabcar usermanager
 cd usermanager
 ```
 
-### change startFabric.sh
+### 4. change startFabric.sh
 
 ```bash
 nano startFabric.sh
@@ -47,7 +47,7 @@ nano startFabric.sh
 
 fabcar -> usermanager
 
-### change query.js
+### 5. change query.js
 
 ```bash
 nano javascript/query.js
@@ -60,7 +60,7 @@ fabcar -> usermanager
 Car -> User<br>
 CAR -> USER<br>
 
-### change invoke.js
+### 6. change invoke.js
 
 ```bash
 nano javascript/invoke.js
